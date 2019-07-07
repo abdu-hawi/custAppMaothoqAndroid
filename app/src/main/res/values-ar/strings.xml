@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">custApp</string>
+    <string name="title_activity_inbox">صندوق الوارد</string>
+
+    <string name="navigation_drawer_open">فتح النافذة</string>
+    <string name="navigation_drawer_close">غلق النافذة</string>
+
+    <string name="action_settings">الضبط</string>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    >
+
+    <!-- Thumbnail Image -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/tst_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="8dp" />
+
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/com_name"
+        android:text="هايبر بنده"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tst_img"
+        android:layout_toEndOf="@+id/tst_img"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+
+    <!-- Rating -->
+    <TextView
+        android:id="@+id/item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/com_name"
+        android:layout_marginTop="1dip"
+        android:layout_toEndOf="@+id/tst_img"
+        android:text="Rice / Rose / Write "
+        android:layout_marginEnd="4dp"
+        android:textSize="@dimen/rating" />
+    <TextView
+        android:id="@+id/price"
+        android:layout_marginTop="1dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/com_name"
+        android:layout_marginEnd="8dp"
+        android:text="270,000,000.00 SR" />
+
+    <!-- Genre -->
+    <TextView
+        android:id="@+id/branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item"
+        android:layout_marginTop="2dp"
+        android:text="Al Awali Branch - Makkah Al Mukramah"
+        android:layout_toEndOf="@+id/tst_img"
+        android:textColor="@color/genre"
+        android:textSize="@dimen/genre" />
+
+    <!-- Release Year -->
+    <TextView
+        android:id="@+id/inv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/year"
+        android:layout_below="@id/branch"
+        android:layout_toEndOf="@+id/tst_img"
+        android:text="22-02-2017 21:22:00"
+        android:textSize="@dimen/year"
+        />
+
+    <ImageView
+        android:id="@+id/img_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tst_img"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/ic_favorite_border" />
+
+    <ImageView
+        android:id="@+id/img_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tst_img"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@id/img_fav"
+        app:srcCompat="@drawable/ic_star_border" />
+
+    <ImageView
+        android:id="@+id/img_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tst_img"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="4dp"
+        app:srcCompat="@drawable/ic_delete" />
+
+    <ImageView
+        android:id="@+id/img_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_del"
+        android:layout_toStartOf="@+id/img_del"
+        android:layout_marginEnd="1dp"
+        app:srcCompat="@drawable/ic_download"
+        />
+
+    <!--
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/releaseYear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/year"
+        android:textSize="@dimen/year" />
+    -->
+</RelativeLayout>

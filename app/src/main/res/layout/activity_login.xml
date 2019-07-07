@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hawi.custapp.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtNameL"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Write you name"/>
+        <EditText
+            android:id="@+id/txtPassL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write yoru password"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:onClick="btnLoginEvent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"/>
+    </LinearLayout>
+
+</RelativeLayout>
